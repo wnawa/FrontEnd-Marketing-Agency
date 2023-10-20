@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@fontsource/rubik": "^5.0.15",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.3",
+    "sass-google-fonts": "^1.0.1"
+  },
+  "name": "last-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

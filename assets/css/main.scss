@@ -1,0 +1,63 @@
+/* Primary Color: #98AA28
+Secondary Color: #A2BDAA
+Body text color: #78847D
+Dark Green: #253D32
+White Color: #FFFFFF */
+$primary:#98AA28;
+$secondary:#A2BDAA;
+$body: #78847D;
+$body-color:#78847D;
+$dark:#253D32;
+$white: #FFFFFF;
+$black:#000000;
+
+$font-sizes: (
+  1: 12rem,
+  2: 10rem,
+  3: 5.625rem,
+  4: 2.25rem,
+  5: 1.375rem,
+  6: 1rem,
+);
+// start shadow code
+// $box-shadow:                  0 .5rem 1rem rgba($black, .15);
+// $box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+// $box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
+// End shadow code
+
+// start for code font
+$heading-font-family: 'Rubik', sans-serif;
+$body-font-family: 'Rubik', sans-serif;
+// $body-font-size:16px;
+$font-family-sans-serif:  'Rubik', sans-serif;
+// $base-font-size: 10px;
+// $base-font-weight: 400;
+
+// $heading-font-weight:700;
+// $nav-font-size:36px; 
+// $small-font-size:1.5rem; 
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+// end for code font
+
+
+//resposive sizemobile
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+// );
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//import font 
+@import "../../node_modules/@fontsource/rubik"; // Defaults to weight 400
+@import "../../node_modules/@fontsource/rubik/400.css"; // Specify weight
+@import "../../node_modules/@fontsource/rubik/700.css"; // Specify weight and style
