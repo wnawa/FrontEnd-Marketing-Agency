@@ -18,7 +18,7 @@
         font-size: 14px;
       }
     </style>
-    
+
     <!-- link to bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
@@ -34,94 +34,163 @@
     ></script>
   </head>
   <body>
-    <!-- start of header code -->
+    <!-- start of header code  p-3 p-lg-5 p-md-4  p-sm-3-->
     <div
-      class="container-fluid mx-auto align-content-center text-center bg-image p-lg-4 p-xs-3 p-sm-4 p-5"
+      class="container-fluid mx-auto align-content-center text-center bg-image pb-sm-3 pb-lg-5"
       style="
         background-image: url(./assets/images/hero-bg.png);
         background-position: auto;
         max-width: 1440px;
         background-size: 100% 100%;
-
         background-repeat: no-repeat;
       "
     >
-      <!-- start code row logo menue trail button -->
-      <div class="row align-content-center ">
-        <div class="col-4">
-          <img
-            src="./assets/images/logo-white.png"
-            class="float-start ms-lg-4 ms-sm-2 d-block img-fluid"
-          />
-        </div>
-        <div class="col-4">
-          <ul class="nav justify-content-center text-white">
-            <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-6" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <button
-            class="btn btn-outline-primary bg-opacity-10 bg-light float-end rounded-pill text-white shadow p-3 me-lg-4 me-sm-2 fs-6 btn-block btn-lg"
-            style="width: 140px; height: 55px"
+      <!-- start  row logo menue trail button -->
+      <div class="row align-content-center justify-content-center ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid ">
+            <!-- ms-lg-4 ms-sm-1 ms-xs-0 mb-1 -->
+            <img
+              src="./assets/images/logo-white.png"
+              class="float-start ms-2 d-block img-fluid"
+            />
+            <button
+              class="navbar-toggler me-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center align-content-center p-2"
+              id="navbarTogglerDemo03"
+            >
+              <ul
+                class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center align-content-center"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+
+              <button
+                class="btn btn-outline-primary bg-opacity-10 bg-light float-lg-end mx-xs-auto rounded-pill text-white shadow text-center justify-content-center align-content-center me-lg-4 me-sm-1 me-xs-0 text-nowrap display-6"
+              >
+                Free Trial
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- start row header Educational pj -->
+      <div
+        class="row row-cols-auto text-center align-content-center justify-content-center mx-auto   p-5 p-lg-5 p-md-4  p-sm-3"
+      >
+        <div class="col text-center ">
+          <h3
+            class="text-secondary fw-medium  h3 d-block"
+            style="letter-spacing: +1"
           >
-            Free Trail
+            The Best
+          </h3>
+          <h1 class="display-5 text-white fw-bold d-block text-center h1 mx-auto" style="letter-spacing: +3">
+            Educational Project
+          </h1>
+          <!--  -->
+          <p class="d-block text-secondary p-lg-3 p-sm-1 text-wrap text-break">
+            Completely synergize resource taxing relationships via premier
+            <br />niche markets. Professionally cultivate one-to-one customer
+          </p>
+          <button
+            class="btn btn-primary  p-lg-3 p-sm-1 text-white rounded-pill fw-bold text-nowrap shadow"
+            style="max-width: 243px; max-height: 78px; letter-spacing: +1"
+          >
+            Get Started
           </button>
         </div>
       </div>
-      <!-- start header Educational pj -->
-      <div
-        class="row text-center align-content-center justify-content-center mx-auto p-lg-4 p-xs-3 p-sm-4 mb-5"
-      >
-        <h3 class="text-secondary fw-normal lead fs-4">The Best</h3>
-        <h1 class="display-4 text-white p3 fw-bold fs-3" style="letter-spacing: +2;">
-          Educational Project
-        </h1>
-        <!--  -->
-        <p class="d-block text-secondary p-3 text-wrap text-break fs-5">
-          Completely synergize resource taxing relationships via premier
-          <br />niche markets. Professionally cultivate one-to-one customer
-        </p>
-        <button
-          class="btn btn-primary p-3 text-white rounded-pill d-block fw-bold btn-block"
-          style="max-width:243px; height: 78px ;letter-spacing: +1;"
-        >
-          Get Started
-        </button>
-      </div>
     </div>
     <!-- start code for Logos clients -->
-    <div class="container-fluid p-5 bg-light" style="  max-width: 1440px;">
-      <!-- style="width: 117" -->
-      <div class="row row-cols-auto">
-        <img src="./assets/images/client-1.png" class="mx-auto img-fluid col" />
-        <img src="./assets/images/client-2.png" class="mx-auto img-fluid col" />
-        <img src="./assets/images/client-3.png" class="mx-auto img-fluid col" />
-        <img src="./assets/images/client-4.png" class="mx-auto img-fluid col" />
-        <img src="./assets/images/client-5.png" class="mx-auto img-fluid col" />
+    <div class="container-fluid p-3 p-lg-5 p-md-4  p-sm-3 bg-light" style="max-width: 1440px">
+      <!-- col-sm-12 col-md-2 col-lg-2  -->
+      <div class="row row-cols-auto justify-content-around">
+        <div class="col">
+          <img
+            src="./assets/images/client-1.png"
+            class="mx-auto img-fluid d-block"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/images/client-2.png"
+            class="mx-auto img-fluid d-block"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/images/client-3.png"
+            class="mx-auto img-fluid d-block"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/images/client-4.png"
+            class="mx-auto img-fluid d-block"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="./assets/images/client-5.png"
+            class="mx-auto img-fluid d-block"
+          />
+        </div>
       </div>
     </div>
 
     <!-- start code services section -->
-    <div class="container p-5 ">
-      <div class="row">
-        <!-- right column  -->
-        <div class="col-6 p-lg-4 p-xs-3 p-sm-4">
-         
-            <h2 class="text-dark fw-bolder">
-              We’re Strategic Digital <br />Marketing Agency
-            </h2>
-         
+    <div class="container  p-3 p-lg-5 p-md-4 p-sm-3 justify-content-between">
+      <div class="row row-cols-auto justify-content-around">
+        <!--Services right column  -->
+        <div class="col-lg-6 col-sm-12 p-lg-4 p-sm-4 mx-sm-auto p-3">
+          <h2 class="text-dark fw-bolder h2">
+            We’re Strategic Digital <br />Marketing Agency
+          </h2>
+
           <p
             class="text-body text-muted fw-lighter p-2"
             style="max-width: 424px"
@@ -131,18 +200,21 @@
             spare to negatives
           </p>
           <button
-            class="btn btn-primary p-3 text-white rounded-pill fw-bold  btn-block"
-            style="width:243px; height: 78px ;letter-spacing: +1;"
+            class="btn btn-primary p-3 text-white rounded-pill fw-bold btn-block text-nowrap shadow"
+            style="max-width: 243px; max-height: 78px; letter-spacing: +1"
           >
             Get Started
           </button>
         </div>
-        <!-- left column  -->
-        <div class="col-6 p-lg-4 p-xs-3 p-sm-4">
-          <div class="row row-cols-2 justify-content-between">
+        <!--Services left column  -->
+        <div class="col-lg-6 col-sm-12 col-xs-12 p-lg-4 p-xs-3 p-sm-2 p-3">
+          <div class="row row-cols-2 justify-content-around">
             <div class="col">
-              <img src="./assets/images/services-icon-1.png" class="pb-2" />
-              <h6 class="text-dark pb-2 pt-2">
+              <img
+                src="./assets/images/services-icon-1.png"
+                class="pb-2 d-block img-fluid"
+              />
+              <h6 class="text-dark pb-2 pt-2 h6">
                 <strong>Content Strategy</strong>
               </h6>
               <p class="text-body text-muted fw-lighter">
@@ -151,8 +223,11 @@
               </p>
             </div>
             <div class="col">
-              <img src="./assets/images/services-icon-2.png" class="pb-2" />
-              <h6 class="text-dark pb-2 pt-2">
+              <img
+                src="./assets/images/services-icon-2.png"
+                class="pb-2 d-block img-fluid"
+              />
+              <h6 class="text-dark pb-2 pt-2 h6">
                 <strong>Content Development</strong>
               </h6>
               <p class="text-body text-muted fw-lighter">
@@ -161,8 +236,11 @@
               </p>
             </div>
             <div class="col">
-              <img src="./assets/images/services-icon-3.png" class="pb-2" />
-              <h6 class="text-dark pb-2 pt-2">
+              <img
+                src="./assets/images/services-icon-3.png"
+                class="pb-2 d-block img-fluid"
+              />
+              <h6 class="text-dark pb-2 pt-2 h6">
                 <strong>Content Creation</strong>
               </h6>
               <p class="text-body text-muted fw-lighter">
@@ -171,8 +249,11 @@
               </p>
             </div>
             <div class="col">
-              <img src="./assets/images/services-icon-4.png" class="pb-2" />
-              <h6 class="text-dark pb-2 pt-2">
+              <img
+                src="./assets/images/services-icon-4.png"
+                class="pb-2 d-block img-fluid"
+              />
+              <h6 class="text-dark pb-2 pt-2 h6">
                 <strong>Content Optimization</strong>
               </h6>
               <p class="text-body text-muted fw-lighter">
@@ -185,25 +266,25 @@
     </div>
 
     <!-- start of Artikles section -->
-    <div class="container p-lg-5 p-md-4 p-sm-3 p-xs-2 ">
-      <h2 class="text-dark fw-bolder pb-3">Articles From Our Blog</h2>
-      <div class="row">
-        <div class="col-6 ">
+    <div class="container p-3 p-lg-5 p-md-4 p-sm-3 justify-content-around">
+      <h2 class="text-dark fw-bolder pb-3 h2">Articles From Our Blog</h2>
+      <div class="row row-cols-auto justify-content-around">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <img
             src="./assets/images/article-one.png"
             class="d-block img-fluid"
           />
-          <h6 class="text-dark pb-3 pt-3 fw-bolder">
+          <h6 class="text-dark pb-3 pt-3 fw-bolder h6">
             10 Reasons to invest in SEO copywriting services
           </h6>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-6">
           <!-- style="max-width: 270px;" -->
           <img
             src="./assets/images/article-two.png"
-            class="mx-auto d-block img-fluid"
+            class="d-block img-fluid"
           />
-          <h6 class="text-dark pb-3 pt-3">
+          <h6 class="text-dark pb-2 pt-3 h6">
             <strong>How to get hired at a top Digital Marketing</strong>
           </h6>
           <p class="text-dark fw-lighter text-muted">
@@ -211,13 +292,12 @@
             cool...
           </p>
         </div>
-        <div class="col-3">
-          <!-- style="max-width: 270px;" -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
           <img
             src="./assets/images/article-three.png"
-            class="mx-auto d-block img-fluid"
+            class="d-block img-fluid"
           />
-          <h6 class="text-dark pb-3 pt-3">
+          <h6 class="text-dark pb-2 pt-3 h6">
             <strong>Copywriting guidelines during the coronavirus</strong>
           </h6>
           <p class="text-dark fw-lighter text-muted">
@@ -228,31 +308,33 @@
       </div>
     </div>
 
-    <!-- start of Newsletter section  /* max-width: 1170px; */-->
+    <!-- start of Newsletter section  -->
     <div
-      class="container mx-auto align-content-center align-middle justify-content-center bg-image p-lg-5 p-md-4 p-sm-3 p-xs-2"
-      
+      class="container align-content-center align-middle justify-content-center bg-image p-lg-5 p-md-4 p-sm-3  p-3"
       style="
         background-image: url(./assets/images/subscribe-bg.png);
         background-position: center;
-         /* max-width: 70%;  */
+        /* max-width: 70%;  */
         background-size: 93% 100%;
         background-repeat: no-repeat;
       "
     >
-      <h3 class="text-white p-lg-4 p-xs-3 p-sm-4 p-md-3 mb-1">
+      <h3 class="text-white p-lg-4 p-xs-3 p-sm-4 p-md-3 mb-1 h3 pb-3 pt-3">
         Subscribe to get information, latest news and other :
       </h3>
       <form action="#" class="p-lg-4 p-xs-3 p-sm-4 p-md-3 mb-5 mb-xs-3">
         <input
+          id="Email"
           class="border border-0 bg-white text-black rounded-pill p-lg-4 p-xs-3 p-sm-4 mb-3"
-          style="width: 372px; height: 78px"
+          style="max-width: 372px; max-height: 78px"
           type="text"
           placeholder="     Your Email"
-        />  &nbsp;
+        />
+        &nbsp;
+        <!-- width: 243px; height: 78px ; -->
         <button
-          class="btn btn-primary p-3 text-white rounded-pill fw-bold  btn-block"
-          style="width: 243px; height: 78px ;letter-spacing: +1;"
+          class="btn btn-primary text-white rounded-pill fw-bold btn-block text-nowrap p-3 shadow"
+          style="max-width: 243px; max-height: 78px; letter-spacing: +1"
         >
           Get Started
         </button>
@@ -261,66 +343,125 @@
 
     <!-- start of footer section -->
 
-    <div
-      class="container p-lg-5 p-md-4 p-sm-3 p-xs-2 justify-content-center align-content-center"
-    >
-      <div class="row row-cols-4">
-        <div class="col-3">
+    <div class="container p-3 p-lg-5 p-md-4 p-sm-3   justify-content-center align-content-center">
+      <div class="row ">
+        <!-- start code of logo and social media link -->
+        <div class="col-lg-3 col-md-12 col-sm-12">
           <img
             src="./assets/images/logo-dark.png"
-            class=" pb-2 pt-2 d-block img-fluid"
+            class="pb-2 pt-2 d-block img-fluid"
           />
           <p class="text-body fw-lighter text-muted text-wrap text-break">
-            Marketing is a company that focus <br />
-            on developing company’s strategy <br />for increase digital
-            marketing
+            Marketing is a company that focus on developing company’s strategy
+            for increase digital marketing
           </p>
           <!-- <img src="./node_modules/bootstrap-icons/icons/"/> -->
 
-          <i class="fa-brands fa-facebook text-secondary mx-1"></i>
-          <i class="fa-brands fa-twitter text-secondary mx-1"></i>
-          <i class="fa-brands fa-square-instagram text-secondary mx-1"></i>
+          <a href="#">
+            <i class="fa-brands fa-facebook text-secondary mx-1"></i
+          ></a>
+          <a href="#">
+            <i class="fa-brands fa-twitter text-secondary mx-1"></i
+          ></a>
+          <a href="#">
+            <i class="fa-brands fa-square-instagram text-secondary mx-1"></i
+          ></a>
         </div>
-
-        <div class="col-3">
-          <h6 class="text-dark pb-2 pt-2 fw-bolder">Menu</h6>
-          <ul class="text-body fw-lighter text-muted list-unstyled">
-            <li>Home</li>
-            <li>Features</li>
-            <li>Pricing About</li>
-            <li>Contact Us</li>
+        <!-- stat code for navigation footer -->
+        <!-- menu Menu -->
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <h6 class="text-dark pb-2 pt-2 fw-bolder h6">Menu</h6>
+          <ul
+            class="text-body fw-lighter text-muted list-unstyled list-group list-group-flush"
+          >
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Pricing About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </div>
-
-        <div class="col-3">
-          <h6 class="text-dark pb-2 pt-2 fw-bolder">Services</h6>
+        <!-- menu Services -->
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <h6 class="text-dark pb-2 pt-2 fw-bolder h6">Services</h6>
           <ul class="text-body fw-lighter text-muted list-unstyled">
-            <li>Content Strategy</li>
-            <li>Content Development</li>
-            <li>Content Creation</li>
-            <li>Content Optimazion</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Content Strategy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Content Development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Content Creation</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Content Optimazion</a
+              >
+            </li>
           </ul>
         </div>
-
-        <div class="col-3">
-          <h6 class="text-dark pb-2 pt-2 fw-bolder">Company</h6>
+        <!-- menu Company -->
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <h6 class="text-dark pb-2 pt-2 fw-bolder h6">Company</h6>
           <ul class="text-body fw-lighter text-muted list-unstyled">
-            <li>Site Map</li>
-            <li>Terms of Use</li>
-            <li>Privacy Notice</li>
-            <li>Cookies</li>
-            <li>Modern Slavery</li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Site Map</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Privacy Notice</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Cookies</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link text-body fw-lighter text-muted"
+                >Modern Slavery</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </div>
-     <!-- Start of copyright section -->
-     <hr>
-     <div class="copyrights text-center p-3">
+    <!-- Start of copyright section -->
+    <hr />
+    <div class="copyrights text-center p-3">
       &copy; Copyright website. All right reserved
-  </div>
-  <!-- End of copyright section -->
-</div>
-<!-- End of Footer Section -->
+    </div>
+    <!-- End of copyright section -->
+
+    <!-- End of Footer Section -->
   </body>
 </html>

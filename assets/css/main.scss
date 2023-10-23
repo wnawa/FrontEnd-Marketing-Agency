@@ -3,14 +3,18 @@ Secondary Color: #A2BDAA
 Body text color: #78847D
 Dark Green: #253D32
 White Color: #FFFFFF */
-$primary:#98AA28;
-$secondary:#A2BDAA;
-$body: #78847D;
-$body-color:#78847D;
-$dark:#253D32;
-$white: #FFFFFF;
-$black:#000000;
-
+$primary: #98aa28;
+$secondary: #a2bdaa;
+$body: #78847d;
+$body-color: #78847d;
+$dark: #253d32;
+$white: #ffffff;
+$black: #000000;
+$navbar-toggler-focus-width:0px;
+$navbar-toggler-border-radius: 0px;
+$navbar-nav-link-padding-x:         1.5rem;
+$headings-line-height:        1.2;
+$letter-spacing-temp: 1rem;
 $font-sizes: (
   1: 12rem,
   2: 10rem,
@@ -27,24 +31,24 @@ $font-sizes: (
 // End shadow code
 
 // start for code font
-$heading-font-family: 'Rubik', sans-serif;
-$body-font-family: 'Rubik', sans-serif;
+$heading-font-family: "Rubik", sans-serif;
+$body-font-family: "Rubik", sans-serif;
 // $body-font-size:16px;
-$font-family-sans-serif:  'Rubik', sans-serif;
+$font-family-sans-serif: "Rubik", sans-serif;
 // $base-font-size: 10px;
 // $base-font-weight: 400;
 
 // $heading-font-weight:700;
-// $nav-font-size:36px; 
-// $small-font-size:1.5rem; 
+// $nav-font-size:36px;
+// $small-font-size:1.5rem;
 
-$font-weight-lighter:         lighter;
-$font-weight-light:           300;
-$font-weight-normal:          400;
-$font-weight-bold:            700;
-$font-weight-bolder:          bolder;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
 // end for code font
-
 
 //resposive sizemobile
 // $container-max-widths: (
@@ -54,10 +58,136 @@ $font-weight-bolder:          bolder;
 //   xl: 1140px,
 //   xxl: 1320px
 // );
+
+$breakpoints: (
+  sm: (
+    // 320x568
+    min: 320px,
+    max: 575.98px,
+    // min: 576px,
+    // max: 575.98px,,
+  ),
+  md: (
+    min: 768px,
+    max: 767.98px,
+  ),
+  lg: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  xl: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xxl: (
+    min: 1400px,
+    max: 1399.98px,
+  ),
+);
+$border-radius-pill: 50rem;
+@mixin breakpoint($breakpoint, $direction: min) {
+  //check if the supplied breakpoint exists in our breakpoits map
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-values: map-get($breakpoints, $breakpoint);
+    $breakpoint-min: map-get($breakpoint-values, min);
+    $breakpoint-max: map-get($breakpoint-values, max);
+
+    //check if we are writing styles for larger or smaller screens
+    @if $direction == min {
+      @media (min-width: $breakpoint-min) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint-max) {
+        @content;
+      }
+    }
+
+    // use the custom value if the breakpoint is not part of the pre-defined list
+  } @else {
+    @if $direction == min {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+.navbar-toggler:focus {
+
+box-shadow:none;
+}
+
+.btn-outline-primary {
+
+
+  @include breakpoint(lg) {
+    width: 140px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+.btn-primary {
+
+
+  @include breakpoint(lg) {
+    width: 243px;
+    height: 78px;
+  }
+}
+#Email {
+  @include breakpoint(lg) {
+    width: 372px;
+    height: 78px;
+  }
+}
+.fs-6 {
+  @include breakpoint(sm) {
+    font-size: 20%;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
+}
+.fs-5 {
+  @include breakpoint(sm) {
+    font-size: 50%;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 20px;
+  }
+}
+.fs-4 {
+  @include breakpoint(sm) {
+    font-size: 0.5em;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 22px;
+  }
+}
+.fs-3 {
+  @include breakpoint(sm) {
+    font-size: 0.5em;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 16px;
+  }
+}
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+//for resizable
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
-//import font 
+//import font
 @import "../../node_modules/@fontsource/rubik"; // Defaults to weight 400
 @import "../../node_modules/@fontsource/rubik/400.css"; // Specify weight
 @import "../../node_modules/@fontsource/rubik/700.css"; // Specify weight and style
