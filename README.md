@@ -1,8 +1,9 @@
-# Frontend Project
-Educatiol Project
+#  Project Description
+This is a Frontend Responsive Website for Lawliet Marketing Agency that shows the company's profile and projetcs as well as sponsers and customers.
 
 # Motivation
-This is an Educational Project.
+The Company want a website to attract more customers and for the purpose of renovating her old identity and branding.Also a form for newsletter subscrition and for showing case the comapny's blog.
+In Addition to Features , Pricing , about sections and contact us form. 
 
 
 ## Getting Started
